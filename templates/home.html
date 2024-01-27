@@ -21,7 +21,9 @@
     </p>
     <h2 class="text-center"> Vagas Abertas</h2>
     <p>
-      Aqui será retornado as vagas
+      {% for vaga in vagas %}      
+        {% include '/includes/vagas.html' %}
+      {% endfor %}
     </p>
     <div class="text-center">
       <button class="btn btn-primary btn-lg">Entrar em contato</button>
